@@ -1,0 +1,46 @@
+h1 {
+    color: purple;
+  }
+  
+  p {
+    text-align: center;
+    size: 0.6rem;
+  }
+  
+  /* footer section */
+  
+  .contact {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* not working, find out why */ 
+  /* @media screen and (max-width: 414px) {
+    .contact {
+      flex-direction: column;
+    
+    } */
+  
+  /* style buttons */
+  
+  .btn {
+    background-color: transparent;
+    border: none;
+    color: black;
+    padding: 12px 16px;
+    font-size: 0.75rem;
+    cursor: pointer;
+  }
+  
+  /* chenge text color on mouse-over */
+  .btn:hover {
+    color: pink;
+  }
+  
+  .copy-right {
+    display: block;
+    color: #0e9999;
+    font-size: 0.9rem;
+    padding: 20px 0;
+  }
