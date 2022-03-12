@@ -69,7 +69,108 @@ h1 {
 }
 
 
+/* Main section */
 
+.main-section-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  display: relative;
+  padding-top: 40px;
+}
+
+/* main section background style  */
+.main-section {
+  margin:0;
+  padding: 0;
+  min-height: 100vh;
+  background-image: url("images/main-section\ image.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+/* main section cards styling  */
+.main-section-card {
+  box-sizing: border-box;
+  /* (set 100% of the viewpoint hight) */
+  /* min-height: 100vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* make sure cards are multi-lined within the contanier  */
+  flex-wrap: wrap;
+  /* place cards on top ??? */
+  z-index: 1;
+}
+
+.main-section-card .card {
+  font-family: 'Nunito', sans-serif;
+  position: relative;
+  width: 280px;
+  height: 400px;
+
+  /* rgba adjust color and opacity is 0.1, */
+  background-color: rgba(255,255,255,0.1);
+  margin: 30px;
+  border-radius: 15px;
+  /* shadow setting */
+  box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+  /* hide the text outside of the card, the default of overflow is visible */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  border-left: 1px solid rgba(255,255,255,0.1);
+  backdrop-filter: blur(5px);
+
+}
+
+.main-section-card .card:hover .content {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.main-section-card .card .content {
+  padding: 20px;
+  text-align: center;
+  /* when cuser moving down, the card is hiden */
+  transform: translateY(100px);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+/* when hover to card, showing the content */
+.card:hover {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.main-section-card .card .content h2 {
+  font-size: 28px;
+  color: aliceblue;
+}
+
+.main-section-card .card .content p {
+  font-size: 14px;
+  color: black;
+  margin: 10px 0 15px 0;
+
+}
+
+.main-section-card .card .content a {
+  color: aliceblue;
+  position: relative;
+  display: inline-block;
+  padding: 8px 20px;
+  margin-top: 60px;
+  background-color: grey;
+  text-decoration: none;
+  border-radius: 15px;
+  font-weight: 300;
+}
 
 
   /* footer section */
