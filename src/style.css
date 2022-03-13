@@ -6,14 +6,18 @@ body, html {
 /* Navbar styling */
 
 .navbar-logo {
+  position: relative;
   padding-top: 100px;
   padding-left: 80px;
+
   
 }
 
 .name-capital {
+  position: relative;
   width: 30px;
   height: 30px;
+  display: inline-block;
 }
 
 ul {
@@ -27,17 +31,17 @@ ul {
 
 li {
   display: inline;
-  float:right;
+  float: right;
 }
 
 li a {
   display: block;
-  color: black;
+  color: darkslategrey;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-family: 'Great Vibes', cursive;
-  font-size: 35px;
+  font-size: 30px;
 }
 
 li a:hover {
@@ -50,6 +54,48 @@ li a:hover {
   position: relative;
   padding: 0 0 4.5rem;
 }
+
+/* footer section */
+
+
+.contact {
+  padding-top: 30px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+/* not working, find out why */ 
+/* @media screen and (max-width: 414px) {
+  .contact {
+    flex-direction: column;
+  
+  } */
+
+/* style buttons */
+
+.btn {
+  background-color: transparent;
+  border: none;
+  color: black;
+  padding: 12px 16px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/* chenge text color on mouse-over */
+.btn:hover {
+  color: pink;
+}
+
+.copy-right {
+  display: block;
+  color: black;
+  font-size: 0.8rem;
+  padding: 15px 0;
+}
+
+
 
 
 
@@ -104,16 +150,15 @@ body, html {
   margin-top: 0;
   display: relative;
   padding-top: 40px;
-  padding-bottom: 60px;
 }
 
 /* main section background style  */
 .main-section {
   margin:0;
   padding: 0;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   background-image: url("images/main-section\ image.jpg");
-  height: 100%;
+  height: auto;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -124,7 +169,6 @@ body, html {
 .main-section-card {
   box-sizing: border-box;
   /* (set 100% of the viewpoint hight) */
-  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -202,46 +246,7 @@ body, html {
 }
 
 
-  /* footer section */
-
-
-  .contact {
-    padding-top: 30px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-  }
   
-  /* not working, find out why */ 
-  /* @media screen and (max-width: 414px) {
-    .contact {
-      flex-direction: column;
-    
-    } */
-  
-  /* style buttons */
-  
-  .btn {
-    background-color: transparent;
-    border: none;
-    color: black;
-    padding: 12px 16px;
-    font-size: 0.75rem;
-    cursor: pointer;
-  }
-  
-  /* chenge text color on mouse-over */
-  .btn:hover {
-    color: pink;
-  }
-  
-  .copy-right {
-    display: block;
-    color: #0e9999;
-    font-size: 0.9rem;
-    padding: 20px 0;
-  }
-
 
  /* --------Page2- About page css style------ */
 
@@ -298,18 +303,18 @@ footer {
  /* --------Page3- Blog page css style------ */
 
 /* background styling */
-#page3 .navbar {
-  background-image: url("images/main-section\ image.jpg");
-  height: 100%;
+#page3 {
+  background-image: url("images/Home\ image.jpg");
+  height: auto;
   background-position: center;
   background-repeat: repeat;
   background-size: cover;
 }
 
-#page3 .blog-content {
+/* #page3 .blog-content {
   background-color: blanchedalmond;
   margin: 0;
-}
+} */
 
 #page3 .blog-header {
   font-size: 0.6rem;
@@ -336,7 +341,7 @@ footer {
   align-items: stretch;
   flex-wrap: wrap;
   align-content: center;
-  padd
+
 }
 
 #page3 .blog-list .blog-details {
@@ -363,6 +368,102 @@ footer {
 
  
 /* --------Page4- Contact page css style------ */
-   
+#page4 .nav-link4 {
+  color: purple;
+  
+}
 
- 
+/* page4 background styling */
+
+#page4 {
+  margin:0;
+  padding: 0;
+  min-height: 100vh;
+  background-image: url("images/main-section\ image.jpg");
+  height: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ }  
+
+ .contact-content {
+   position: relative;
+ }
+
+ /* CV dowload button styling */
+ #page4 .contact-cv {
+   display: flex;
+   margin: 0 auto 0;
+   padding: 10px 20px;
+   font-size: 15px;
+   cursor: pointer;
+   text-align: center;
+   text-decoration: none;
+   outline: none;
+   background-color:cornflowerblue;
+   border: none;
+   border-radius: 8px;
+   box-shadow: rgba(0,0,0,0.5);
+ }
+
+ #page4 .contact-cv:hover {
+   background-color: blueviolet;
+ } 
+
+ /* hr styling */
+
+hr {
+  width: 40%;
+  margin: 0 auto 100px;
+  color: grey;
+  background-color: grey;
+  
+}
+
+/* contact content styling - h2 & h3 */
+
+ #page4 h2 {
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+  font-size: 2rem;
+ }
+
+ #page4 h3 {
+   margin-top: 160px;
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+  font-size: 1.2rem;
+ }
+
+/* conatct list styling */
+
+#page4 .contact-btn, .btn-link {
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  color: black;
+  padding: 12px 16px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/* chenge text color on mouse-over */
+#page4 .contact-btn, .btn-link:hover {
+  color: pink;
+}
+
+
+#page4 .contact-list {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
+@media screen and (max-width: 414px) {
+  #page4 .contact-list {
+    flex-direction: column;
+  
+  }
+
