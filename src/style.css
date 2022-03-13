@@ -1,3 +1,8 @@
+body, html {
+  height: 100%;
+}
+
+
 /* Navbar styling */
 
 .navbar-logo {
@@ -97,7 +102,6 @@ body, html {
 
 .main-section-title {
   margin-top: 0;
-  margin-bottom: 0;
   display: relative;
   padding-top: 40px;
   padding-bottom: 60px;
@@ -120,7 +124,7 @@ body, html {
 .main-section-card {
   box-sizing: border-box;
   /* (set 100% of the viewpoint hight) */
-  /* min-height: 100vh; */
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -293,10 +297,72 @@ footer {
 
  /* --------Page3- Blog page css style------ */
 
+/* background styling */
+#page3 .navbar {
+  background-image: url("images/main-section\ image.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+}
 
+#page3 .blog-content {
+  background-color: blanchedalmond;
+  margin: 0;
+}
 
- /* photo grid */
+#page3 .blog-header {
+  font-size: 0.6rem;
+  margin: 0;
+  padding: 20px 0 0;
+}
 
+/* artical styling  */
+#page3 .blog-image {
+  margin-top: 20px;
+  margin-left: 70px;
+  width: 60%;
+  height: auto;
+  
+
+}
+ 
+#page3 .blog-list {
+  margin-top: 20px;
+  padding-bottom: 40px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  flex-wrap: wrap;
+  align-content: center;
+  padd
+}
+
+#page3 .blog-list .blog-details {
+  position: relative;
+  margin-top: 12px;
+  position: relative;
+  width: 280px;
+  height: 370px;
+  background-color: grey;
+  
+}
+
+#page3 .blog-section .blog-list .blog-details h2 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 28px;
+  color: aliceblue;
+  text-align: center;
+}
+
+#page3 .blog-section .blog-list .blog-details p {
+   font-size: 12px;
+   margin: 10px 0 15px 0;
+}
+
+ 
+/* --------Page4- Contact page css style------ */
    
 
  
