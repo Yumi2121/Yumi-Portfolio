@@ -2,62 +2,9 @@ body, html {
   height: 100%;
 }
 
-
-/* Navbar styling */
-
-.navbar-logo {
-  position: relative;
-  padding-top: 100px;
-  padding-left: 80px;
-
-  
-}
-
-.name-capital {
-  position: relative;
-  width: 30px;
-  height: 30px;
-  display: inline-block;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  position:-webkit-sticky;
-  position: sticky;
-  top:0;
-}
-
-li {
-  display: inline;
-  float: right;
-}
-
-li a {
-  display: block;
-  color: darkslategrey;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-family: 'Great Vibes', cursive;
-  font-size: 30px;
-}
-
-li a:hover {
-  color: aqua;
-
-}
-
-
-.navbar {
-  position: relative;
-  padding: 0 0 4.5rem;
-}
-
 /* footer section */
 
-
+ 
 .contact {
   padding-top: 30px;
   text-align: center;
@@ -65,14 +12,8 @@ li a:hover {
   justify-content: center;
 }
 
-/* not working, find out why */ 
-/* @media screen and (max-width: 414px) {
-  .contact {
-    flex-direction: column;
-  
-  } */
 
-/* style buttons */
+/* style footer buttons */
 
 .btn {
   background-color: transparent;
@@ -95,11 +36,74 @@ li a:hover {
   padding: 15px 0;
 }
 
+/* Navbar styling */
+.navbar {
+  background-color:aliceblue;
+  position: relative;
+  padding: 0 0 4.5rem;
+  padding-bottom: 0;
+  
+}
+
+/* navbar sticky not working */
+.nav-list {
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: sticky;
+  top:0;
+}
+
+li a {
+  position: relative;
+  display: flex;
+  color: darkslategrey;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'Great Vibes', cursive;
+  font-size: 30px;
+}
+
+li a:hover {
+  color: aqua;
 
 
 
 
-/* --------Page1-home page css style------ */
+
+/*            
+@media sreen and (max-width: 414px) {
+   .navbar {
+    display: flex;
+    flex-direction: column;
+   }
+
+   .home-title-image {
+     position: static;
+     width: 100%;
+   }
+
+   .home-text {
+     text-aligh: center;
+   } */
+
+
+}
+
+
+
+/******** --------Page1-home page css style------ ********/
+
+/* navbar color purple in current page */
+#page1 .nav-link1 {
+  color: purple;
+  
+}
+
 
 /* body section */
 
@@ -110,17 +114,35 @@ body, html {
   margin: 0;
 }
 
-.home-section {
-  background-image: url("images/Home\ image.jpg");
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+#page1 .home-title {
+  background-color:aliceblue;
+  display: flex;
+  position: relative;
+
+}
+
+#page1 .home-text {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto 10px auto;
 }
 
 
-
 /* Title section  */
+
+
+/* images */
+
+#page1 .home-title-image {
+  width: 50%;
+  margin: 70px 20px 70px 20px;
+  text-align: left;
+}
+
+
 
   h1 {
     color: black;
@@ -246,19 +268,22 @@ body, html {
 }
 
 
-  
-
- /* --------Page2- About page css style------ */
+ /******** --------Page2- About page css style------ ********/
 
 /* background styling */
- .about-page {
+#page2 {
+  margin: 50px 0 80px 0;
+  padding-bottom: 60px;
   background-image: url("images/main-section\ image.jpg");
-  height: 100%;
+  height: auto;
   background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
-}
+  background-repeat: no-repeat;
+ }  
 
+ #page2 footer {
+   background-color: antiquewhite;
+ }
 
 /* about page: cards styling */
 .about-content {
@@ -300,21 +325,23 @@ footer {
 }
 
 
- /* --------Page3- Blog page css style------ */
+ /******** --------Page3- Blog page css style------ ********/
 
 /* background styling */
-#page3 {
-  background-image: url("images/Home\ image.jpg");
-  height: auto;
+
+#page3 .navbar {
+  background-image: url("images/main-section\ image.jpg");
   background-position: center;
-  background-repeat: repeat;
   background-size: cover;
 }
 
-/* #page3 .blog-content {
-  background-color: blanchedalmond;
-  margin: 0;
-} */
+#page3 {
+  background-color:antiquewhite;
+  margin:0;
+  padding: 0;
+  
+ }  
+
 
 #page3 .blog-header {
   font-size: 0.6rem;
@@ -367,7 +394,7 @@ footer {
 }
 
  
-/* --------Page4- Contact page css style------ */
+/******** --------Page4- Contact page css style------ ********/
 #page4 .nav-link4 {
   color: purple;
   
@@ -461,9 +488,24 @@ hr {
 
 }
 
-@media screen and (max-width: 414px) {
+
+/***** responsive  *******/
+
+/* @media screen and (max-width: 414px) {
+  .nav-list {
+    display: list-item;
+    text-align: -webkit-match-parent;
+  }
+
+
   #page4 .contact-list {
     flex-direction: column;
-  
   }
+
+
+  .home-text {
+     text-aligh: center;
+  }
+  
+  } */
 
