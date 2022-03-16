@@ -1,10 +1,11 @@
+
+/* initial setting for page */
 body, html {
   height: 100%;
 }
 
 /* footer section */
 
- 
 .contact {
   padding-top: 30px;
   text-align: center;
@@ -38,12 +39,12 @@ body, html {
 
 /* Navbar styling */
 .navbar {
-  /* background-color:aliceblue; */
+  background-color:aliceblue;
   position: relative;
   padding: 0 0 4.5rem;
   padding-bottom: 0;
   
-}
+} 
 
 /* navbar sticky not working */
 .nav-list {
@@ -56,6 +57,7 @@ body, html {
   position: sticky;
   top:0;
 }
+
 
 li a {
   position: relative;
@@ -70,31 +72,29 @@ li a {
 
 li a:hover {
   color: aqua;
-
-
-
-
-
-/*            
-@media sreen and (max-width: 414px) {
-   .navbar {
-    display: flex;
-    flex-direction: column;
-   }
-
-   .home-title-image {
-     position: static;
-     width: 100%;
-   }
-
-   .home-text {
-     text-aligh: center;
-   } */
-
-
 }
 
+/* navbar & footer mobile layout */
 
+@media screen and (max-width: 414px) {
+  .nav-list {
+    flex-direction: column;
+  }
+
+  .home-title {
+      display: flex;
+      
+    }
+ 
+  li a {
+      padding: 14px 16px;
+      font-size: 15px;
+    }
+
+  footer {
+    width: auto;
+  }
+}
 
 /******** --------Page1-home page css style------ ********/
 
@@ -267,6 +267,31 @@ body, html {
   font-weight: 300;
 }
 
+/* mobile view of home page */
+
+@media screen and (max-width: 414px) {
+  .home-title {
+      display: flex;
+      position: relative;
+      flex-direction: column;
+      align-items: center;
+      
+    }
+ 
+  #page1 h1 {
+      font-size: 2rem;
+  } 
+
+  #page1 p {
+    font-size: 0.75rem;
+  }
+
+  .home-title-image {
+    width: 70%;
+  }
+}
+
+
 
  /******** --------Page2- About page css style------ ********/
 
@@ -278,26 +303,26 @@ body, html {
 
 
 /* background styling */
-#page2 {
-  margin: 50px 0 80px 0;
+.about-content {
+  margin: 0 0 40px 0;
+  padding-top: 50px;
   padding-bottom: 60px;
   background-image: url("images/main-section\ image.jpg");
   height: auto;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
- }  
 
-
-/* about page: cards styling */
-.about-content {
-  margin-top: 30px;
+  /* about page: cards styling */
   box-sizing: border-box;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
-}
+
+
+ }  
+
 
 .about-content .about-cards {
   position: relative;
@@ -326,6 +351,18 @@ body, html {
 
 footer {
   padding-top: 30px;
+}
+
+/* mobile view of About page */
+
+@media screen and (max-width: 414px) {
+  .about-content .about-cards  {
+      padding: 0 20px 20px 20px;
+      margin-bottom: 30px;
+ 
+    }
+    
+
 }
 
 
@@ -403,6 +440,15 @@ footer {
    margin: 10px 0 15px 0;
 }
 
+/* mobile laypout of Blog page */
+
+@media screen and (max-width: 414px) {
+  #page3 .blog-header  {
+    font-size: 0.4rem;
+
+  }
+
+}
  
 /******** --------Page4- Contact page css style------ ********/
 
@@ -500,24 +546,15 @@ hr {
 
 }
 
+/* mobile laypout of Blog page */
 
-/***** responsive  *******/
-
-/* @media screen and (max-width: 414px) {
-  .nav-list {
-    display: list-item;
-    text-align: -webkit-match-parent;
-  }
-
-
-  #page4 .contact-list {
+@media screen and (max-width: 414px) {
+  .contact-list {
+    display: flex;
     flex-direction: column;
+    margin-top: 20px;
+    justify-content: center;
   }
 
-
-  .home-text {
-     text-aligh: center;
-  }
-  
-  } */
+}
 
