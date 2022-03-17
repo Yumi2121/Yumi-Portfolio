@@ -1,6 +1,7 @@
 
 /* initial setting for page */
 body, html {
+  width: 100%;
   height: 100%;
 }
 
@@ -341,7 +342,6 @@ body, html {
 }
 
 
-
  /* cards (study & work) section styling */
 .about-content .cards-group {
   display: flex;
@@ -351,11 +351,10 @@ body, html {
 }
 
 
-
  .about-content .about-card-detail {
   padding: 20px 20px 10px 20px;
   position: relative;
-  width: 380px;
+  width: 350px;
   height: 400px;
   box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
   transition: 0.6s;
@@ -395,12 +394,11 @@ footer {
 
 
   .about-content .about-cards  {
-      padding: 0 20px 20px 20px;
+      padding: 0;
       margin-bottom: 30px;
- 
+      width: 300px;
+     
     }
-    
-
 
 }
 
