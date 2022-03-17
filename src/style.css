@@ -92,7 +92,7 @@ li a:hover {
     }
 
   footer {
-    width: auto;
+    width: 80%;
   }
 }
 
@@ -547,10 +547,10 @@ hr {
 
 }
 
-/* mobile laypout of Blog page */
+/* mobile laypout of Contact page */
 
 @media only screen and (max-width: 414px) {
-  .contact-content .contact-list {
+  #page4 .contact-list {
     flex-direction: column;
     margin-top: 20px;
     
