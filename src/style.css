@@ -475,6 +475,7 @@ footer {
    position: relative;
  }
 
+
  /* CV dowload button styling */
  #page4 .contact-cv {
    display: flex;
@@ -548,12 +549,11 @@ hr {
 
 /* mobile laypout of Blog page */
 
-@media screen and (max-width: 414px) {
-  .contact-list {
-    display: flex;
+@media only screen and (max-width: 414px) {
+  .contact-content .contact-list {
     flex-direction: column;
     margin-top: 20px;
-    justify-content: center;
+    
   }
 
 }
