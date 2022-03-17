@@ -91,8 +91,8 @@ li a:hover {
       font-size: 15px;
     }
 
-  footer {
-    width: 80%;
+ .contact { 
+    flex-direction: column; 
   }
 }
 
@@ -166,16 +166,16 @@ body, html {
 }
 
 
-/* Main section */
+/* Card section styling*/
 
-.main-section-title {
+.card-section-title {
   margin-top: 0;
   display: relative;
-  padding-top: 40px;
+  padding-top: 20px;
 }
 
-/* main section background style  */
-.main-section {
+/* card section background style  */
+.card-section {
   margin:0;
   padding: 0;
   /* min-height: 100vh; */
@@ -187,8 +187,9 @@ body, html {
 
 }
 
-/* main section cards styling  */
-.main-section-card {
+/* card section cards styling  */
+.card-section-cardgroup {
+  padding-bottom: 50px;
   box-sizing: border-box;
   /* (set 100% of the viewpoint hight) */
   display: flex;
@@ -200,7 +201,7 @@ body, html {
   z-index: 1;
 }
 
-.main-section-card .card {
+.card-section-cardgroup .card {
   font-family: 'Nunito', sans-serif;
   position: relative;
   width: 280px;
@@ -223,12 +224,12 @@ body, html {
 
 }
 
-.main-section-card .card:hover .content {
+.card-section-cardgroup .card:hover .content {
   transform: translateY(0);
   opacity: 1;
 }
 
-.main-section-card .card .content {
+.card-section-cardgroup .card .content {
   padding: 20px;
   text-align: center;
   /* when cuser moving down, the card is hiden */
@@ -243,19 +244,19 @@ body, html {
   opacity: 1;
 }
 
-.main-section-card .card .content h2 {
+.card-section-cardgroup .card .content h2 {
   font-size: 28px;
   color: aliceblue;
 }
 
-.main-section-card .card .content p {
+.card-section-cardgroup .card .content p {
   font-size: 14px;
   color: black;
   margin: 10px 0 15px 0;
 
 }
 
-.main-section-card .card .content a {
+.card-section-cardgroup .card .content a {
   color: aliceblue;
   position: relative;
   display: inline-block;
@@ -317,19 +318,47 @@ body, html {
   box-sizing: border-box;
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
   flex-wrap: wrap;
-
+  flex-direction: column;
 
  }  
 
+ /* Add Images styling */
+.about-content .about-add-images {
+  margin: 10px 20px 30px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  opacity: 60%;
+}
 
-.about-content .about-cards {
+.about-add-images .single-image {
+  margin: 0 10px 10px;
+}
+
+.about-add-images .single-image:hover {
+  filter: opacity(.5);
+}
+
+
+
+ /* cards (study & work) section styling */
+.about-content .cards-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+}
+
+
+
+ .about-content .about-card-detail {
+  padding: 20px 20px 10px 20px;
   position: relative;
-  width: 400px;
-  height: 450px;
+  width: 380px;
+  height: 400px;
   box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
-  transition: 0.5s;
+  transition: 0.6s;
 }
 
 .about-content .about-cards .about-card-detail h2 {
@@ -356,12 +385,22 @@ footer {
 /* mobile view of About page */
 
 @media screen and (max-width: 414px) {
+  .about-content .cards-group {
+    flex-direction: column;
+  }
+
+  .about-content .about-add-images {
+    flex-direction: column;
+  }
+
+
   .about-content .about-cards  {
       padding: 0 20px 20px 20px;
       margin-bottom: 30px;
  
     }
     
+
 
 }
 
