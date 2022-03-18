@@ -143,8 +143,6 @@ body, html {
   text-align: left;
 }
 
-
-
   h1 {
     color: black;
     font-family: 'Great Vibes', cursive;
@@ -293,8 +291,6 @@ body, html {
   }
 }
 
-
-
  /******** --------Page2- About page css style------ ********/
 
  /* hilight current page name in navbar */
@@ -324,7 +320,7 @@ body, html {
 
  }  
 
- /* Add Images styling */
+ /* about pgae-Add Images styling */
 .about-content .about-add-images {
   margin: 10px 20px 30px 20px;
   display: flex;
@@ -349,7 +345,6 @@ body, html {
   justify-content: space-evenly;
 
 }
-
 
  .about-content .about-card-detail {
   padding: 20px 20px 10px 20px;
@@ -399,9 +394,7 @@ footer {
       width: 300px;
      
     }
-
 }
-
 
  /******** --------Page3- Blog page css style------ ********/
 
@@ -423,9 +416,7 @@ footer {
   background-color:aliceblue;
   margin:0;
   padding: 0;
-  
  }  
-
 
 #page3 .blog-header {
   font-size: 0.6rem;
@@ -439,8 +430,6 @@ footer {
   margin-left: 70px;
   width: 60%;
   height: auto;
-  
-
 }
  
 #page3 .blog-list {
